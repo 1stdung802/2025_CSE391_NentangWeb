@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    h2{
+      text-align: center;
+      color: #333;
+    }
+    form{
+      background: white;
+      padding: 20px;
+      margin: auto;
+      width: 800px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    fieldset{
+      border: 1px solid #aaa;
+      margin-bottom: 20px;
+    }
+    legend{
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td{
+      padding: 8px;
+      vertical-align: top;
+    }
+    label{
+      font-weight: bold;
+      display: inline-block;
+      width: 120px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="datetime-local"],
+    select,
+    textarea{
+      width: 95%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea{
+      height: 80px;
+      resize: vertical;
+    }
+    .captcha{
+      font-family: monospace;
+      font-size: 20px;
+      font-weight: bold;
+      background: #e0e0e0;
+      padding: 10px;
+      letter-spacing: 5px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .buttons{
+      text-align: right;
+      padding-top: 10px;
+    }
+    .buttons button{
+      padding: 10px 20px;
+      margin-left: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <!-- Basic Info -->
+    <fieldset>
+      <legend>Basic Info</legend>
+      <table>
+        <tr>
+          <td><label>Employee ID:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>Last Name:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>First Name:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> XXX
+            <input type="radio" name="gender"> ZZZ
+          </td>
+        </tr>
+        <tr>
+          <td><label>Title:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>Suffix:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>BirthDate:</label></td>
+          <td><input type="datetime-local" ></td>
+        </tr>
+        <tr>
+          <td><label>HireDate:</label></td>
+          <td><input type="datetime-local" ></td>
+        </tr>
+        <tr>
+            <td style="white-space: nowrap;"><label>SSN # (if applicable):</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>Reports To:</label></td>
+          <td>
+            <select>
+                <option>VietNam</option>
+                <option>China</option>
+                <option>America</option>
+                <option>England</option>
+                <option>Korea</option>
+                <option>Japan</option>
+                <option>ThaiLand</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <!-- Contact Info -->
+    <fieldset>
+      <legend>Contact Info</legend>
+      <table>
+        <tr>
+          <td><label>Email:</label></td>
+          <td><input type="email" placeholder="name@example.com"></td>
+        </tr>
+        <tr>
+          <td><label>Address:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>City:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>Region:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>Postal Code:</label></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td><label>Country:</label></td>
+          <td>
+            <select>
+              <option>Hanoi</option>
+              <option>Ho Chi Minh City</option>
+              <option>Beijing</option>
+              <option>Shanghai</option>
+              <option>New York City</option>
+              <option>Los Angeles</option>
+              <option>London</option>
+              <option>Seoul</option>
+              <option>Tokyo</option>
+              <option>Osaka</option>
+              <option>Bangkok</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="white-space: nowrap;"><label>Home Phone:</label></td>
+          <td><input type="tel" ></td>
+        </tr>
+        <tr>
+          <td><label>Photo:</label></td>
+          <td><input type="text" ></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <!-- Optional Info -->
+    <fieldset>
+      <legend>Optional Info</legend>
+      <table>
+        <tr>
+          <td><label>Notes:</label></td>
+          <td>
+            <textarea></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Preferred Shift:</label></td>
+          <td>
+            <input type="checkbox"> Regular
+            <input type="checkbox" checked> Gravy Yard
+          </td>
+        </tr>
+        <tr>
+          <td><label>Active?</label></td>
+          <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+          <td style="white-space: nowrap;"><label>Are you human?</label></td>
+          <td>
+             <div>
+                <span class="captcha" style="display: inline-block; font-weight: bold; margin-right: 10px;">TIDAWO</span>
+                <span onclick="changeCaptcha()" style="color: black; font-weight: bold; cursor: pointer;">Click to change</span>
+            </div>
+            <br>
+                <input type="text" placeholder="Enter captcha">
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <div class="buttons">
+      <button type="submit">✔ Submit</button>
+      <button type="reset">✖ Cancel</button>
+    </div>
+  </form>
+
+</body>
+</html>

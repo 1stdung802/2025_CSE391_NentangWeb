@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>BT3 - Bảng điểm</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+    thead th {
+        font-weight:bold;
+    }
+    tbody th{
+        font-weight:normal;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <!-- Dòng tiêu đề 1 -->
+  <tr>
+    <th rowspan="2" colspan="2"><b>Student</b></th>
+    <th colspan="4"><b>Exam</b></th>
+    <th colspan="4"><b>2nd Exam</b></th>
+    <th colspan="2" rowspan="2"><b>Final Grade</b></th>
+  </tr>
+
+  <!-- Dòng tiêu đề 2 -->
+  <tr>
+    <th><b>Q1</b></th>
+    <th><b>Q2</b></th>
+    <th><b>Q3</b></th>
+    <th rowspan="2"><b>Grade</b></th>
+    <th><b>Q1</b></th>
+    <th><b>Q2</b></th>
+    <th><b>Q3</b></th>
+    <th rowspan="2"><b>Grade</b></th>
+  </tr>
+
+  <!-- Hàng tiêu đề dữ liệu -->
+  <tr>
+   <th><b>Code</b></th>
+   <th><b>Name</b></th>
+    <th>8</th>
+    <th>7</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th><b>NR</b></th>
+    <th><b>R</b></th>
+
+  </tr>
+
+  <!-- Dữ liệu sinh viên -->
+<tr>
+    <th>80549061</th>
+   <th>John</th>
+   <th>70%</th>
+   <th>100%</th>
+   <th>100%</th>
+   <th>17.6</th>
+   <th colspan= "4"></th>
+   <th>17.6</th>
+   <th>18</th>
+</tr>
+
+<tr>
+ <th>80549062</th>
+   <th>Mary</th>
+   <th>10%</th>
+   <th>50%</th>
+   <th>50%</th>
+   <th>6.8</th>
+   <th>100%</th>
+   <th>100%</th>
+   <th>50%</th>
+   <th>16.5</th>
+    <th>16.5</th>
+   <th>17</th>
+</tr>
+
+<tr>
+<th>80549063</th>
+   <th>Claire</th>
+   <th colspan="4"></th>
+   <th>50%</th>
+   <th>50%</th>
+   <th>50%</th>
+   <th>10.0</th>
+    <th>10.0</th>
+   <th>10</th>
+</tr>
+
+</table>
+</body>
+</html>
