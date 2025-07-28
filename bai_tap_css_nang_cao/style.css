@@ -80,6 +80,7 @@ table {
   border-collapse: collapse;
   background-color: lightgray;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Bỏ table-layout: fixed để nội dung tự giãn */
 }
 
 thead {
@@ -91,7 +92,9 @@ th, td {
   border: 1px solid #ccc;
   padding: 12px;
   text-align: center;
+  white-space: nowrap; 
 }
+
 
 tbody tr:hover {
   background-color: white;
