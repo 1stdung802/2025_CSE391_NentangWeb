@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng ký bằng jQuery + AJAX</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    form {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      background: #f9f9f9;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="registerForm">
+    <h2>Đăng ký</h2>
+    <input type="text" id="name" placeholder="Họ tên">
+    <span id="nameError" class="error"></span>
+
+    <input type="email" id="email" placeholder="Email">
+    <span id="emailError" class="error"></span>
+
+    <input type="password" id="password" placeholder="Mật khẩu">
+    <span id="passwordError" class="error"></span>
+
+    <button type="submit">Gửi</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    $(function() {
+      $('#registerForm').on('submit', function(e) {
+        e.preventDefault();
+        $('.error').text('');
+        $('#result').text('');
+
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const password = $('#password').val().trim();
+
+        let valid = true;
+
+        if (!name) {
+          $('#nameError').text('Họ tên không được để trống');
+          valid = false;
+        }
+        if (!email || !email.includes('@')) {
+          $('#emailError').text('Email không hợp lệ');
+          valid = false;
+        }
+        if (password.length < 6) {
+          $('#passwordError').text('Mật khẩu tối thiểu 6 ký tự');
+          valid = false;
+        }
+
+        if (valid) {
+          $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/posts',
+            type: 'POST',
+            data: { name, email, password },
+            success: function(response) {
+              $('#registerForm').slideUp();
+              $('#result').html("<p style='color:green;'>Đăng ký thành công!</p>");
+            },
+            error: function() {
+              $('#result').html("<p style='color:red;'>Lỗi máy chủ. Vui lòng thử lại sau.</p>");
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
