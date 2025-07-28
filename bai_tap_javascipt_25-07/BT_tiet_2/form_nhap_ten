@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập Tiết 2</title>
+</head>
+<body>
+  <h2>Nhập tên của bạn:</h2>
+  <input type="text" id="nameInput" placeholder="Nhập tên của bạn">
+  <button onclick="sayHello()">Chào</button>
+
+  <script>
+    function sayHello() {
+      const name = document.getElementById("nameInput").value;
+      alert("Xin chào, " + name + "!");
+    }
+  </script>
+</body>
+</html>

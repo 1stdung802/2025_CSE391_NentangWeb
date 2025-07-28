@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập Tiết 3</title>
+</head>
+<body>
+  <h2>Tính tổng 2 số</h2>
+  <input type="number" id="so1" placeholder="Nhập số 1">
+  <input type="number" id="so2" placeholder="Nhập số 2">
+  <button onclick="tinhTong()">Tính tổng</button>
+
+  <p id="ketqua"></p>
+
+  <script>
+    function tinhTong() {
+      const a = parseFloat(document.getElementById("so1").value);
+      const b = parseFloat(document.getElementById("so2").value);
+      const tong = a + b;
+
+      document.getElementById("ketqua").innerText = "Tổng là: " + tong;
+    }
+  </script>
+</body>
+</html>
