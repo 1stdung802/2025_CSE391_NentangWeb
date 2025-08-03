@@ -1,0 +1,22 @@
+let data = [
+  { id: 1001, customer: "Nguyễn Thị Mai", employee: "Trần Văn Hưng", amount: 250000, date: "2024-07-01 09:00" },
+  { id: 1002, customer: "Phạm Văn Dũng", employee: "Lê Thị Thu", amount: 340000, date: "2024-07-01 09:05" },
+  { id: 1003, customer: "Lê Thị Hà", employee: "Ngô Văn Kiên", amount: 510000, date: "2024-07-01 09:10" },
+  { id: 1004, customer: "Trần Quốc Huy", employee: "Đinh Thị Nhàn", amount: 760000, date: "2024-07-01 09:15" },
+  { id: 1005, customer: "Ngô Thị Hạnh", employee: "Vũ Thanh Sơn", amount: 430000, date: "2024-07-01 09:20" },
+  { id: 1006, customer: "Đỗ Văn An", employee: "Lý Minh Châu", amount: 290000, date: "2024-07-01 09:25" },
+  { id: 1007, customer: "Hoàng Thị Yến", employee: "Nguyễn Thị Hòa", amount: 670000, date: "2024-07-01 09:30" },
+  { id: 1008, customer: "Bùi Minh Quân", employee: "Trịnh Văn Tài", amount: 720000, date: "2024-07-01 09:35" },
+  { id: 1009, customer: "Nguyễn Thị Lan", employee: "Phạm Hồng Hải", amount: 380000, date: "2024-07-01 09:40" },
+  { id: 1010, customer: "Trương Quốc Bảo", employee: "Nguyễn Thị Như", amount: 810000, date: "2024-07-01 09:45" },
+  { id: 1011, customer: "Võ Văn Cường", employee: "Mai Thị Tâm", amount: 470000, date: "2024-07-01 09:50" },
+  { id: 1012, customer: "Lý Thị Hương", employee: "Đoàn Văn Hậu", amount: 550000, date: "2024-07-01 09:55" },
+  { id: 1013, customer: "Đinh Thị Xuân", employee: "Nguyễn Thanh Bình", amount: 310000, date: "2024-07-01 10:00" },
+  { id: 1014, customer: "Phạm Hữu Tài", employee: "Lê Thị Mỹ", amount: 460000, date: "2024-07-01 10:05" },
+  { id: 1015, customer: "Nguyễn Hồng Minh", employee: "Trần Thị Tuyết", amount: 530000, date: "2024-07-01 10:10" },
+  { id: 1016, customer: "Trần Văn Hòa", employee: "Hoàng Thị Bích", amount: 690000, date: "2024-07-01 10:15" },
+  { id: 1017, customer: "Nguyễn Thị Thanh", employee: "Đặng Minh Tuấn", amount: 740000, date: "2024-07-01 10:20" },
+  { id: 1018, customer: "Đoàn Văn Phúc", employee: "Nguyễn Mai Linh", amount: 620000, date: "2024-07-01 10:25" },
+  { id: 1019, customer: "Lê Thị Hoa", employee: "Trần Quốc Việt", amount: 360000, date: "2024-07-01 10:30" },
+  { id: 1020, customer: "Nguyễn Thanh Tùng", employee: "Phạm Minh Thư", amount: 490000, date: "2024-07-01 10:35" }
+];

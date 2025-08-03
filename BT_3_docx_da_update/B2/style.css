@@ -1,0 +1,77 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 6px 14px;
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
+
+.table td, .table th {
+  text-align: center;
+}
+
+.action-btn {
+  margin: 0 2px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-view { background-color: #0dcaf0; }
+.btn-edit { background-color: #ffc107; }
+.btn-delete { background-color: #dc3545; }
+
+.btn-batch-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.pagination-info-box,
+#resultText {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
